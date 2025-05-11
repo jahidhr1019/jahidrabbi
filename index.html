@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Jahid | Rabbi</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="css/johndoe.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/arabby1/"
+                        target="_blank" rel="noopener noreferrer"><i class="ti-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="social-item"><a class="social-link text-light" href="https://x.com/jahid1691" target="_blank"
+                        rel="noopener noreferrer"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="mailto:jahidhr1019@gmail.com"><i
+                            class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light"
+                        href="https://www.instagram.com/night_____king/" target="_blank" rel="noopener noreferrer"><i
+                            class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/jahidhr1019"
+                        target="_blank" rel="noopener noreferrer"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="header-content">
+                <h4 class="header-subtitle">Hello, I am</h4>
+                <h1 class="header-title" style="font-size: 2.5rem; letter-spacing: 0.1rem;">Md Jahidul Hasan Rabbi</h1>
+                <h6 class="header-mono">Manager  |  Hijrat Air Travels</h6>
+                <button class="btn btn-primary btn-rounded" onclick="printResume()"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <script>
+                    function printResume() {
+                        const link = document.createElement('a');
+                        link.href = 'resume/jahid_resume.pdf'; // Ensure this path points to your actual resume file
+                        link.target = '_blank'; // Open in a new tab
+                        link.click();
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <a href="imgs/avatar1.JPG" class="img-popup">
+                        <img src="imgs/avatar1.JPG" alt="" class="brand-img">
+                    </a>
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Jahid</h5>
+                        <div class="brand-subtitle">Manager| Hijrat Air Travels</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">I am a strong, agile, and motivated individual with a fast learning mindset. I adapt
+                    quickly, take initiative, and thrive in dynamic environments where communication, problem-solving,
+                    and results matter.</h5>
+                <button class="btn btn-outline-danger" onclick="downloadCV()"><i class="icon-down-circled2"></i>Download My CV</button>
+                <script>
+                    function downloadCV() {
+                        const link = document.createElement('a');
+                        link.href = 'resume/jahid_resume.pdf'; // Ensure this path points to your actual CV file
+                        link.target = '_blank'; // Open in a new tab
+                        link.download = 'jahid_resume.pdf';
+                        link.click();
+                    }
+                </script>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 07 October 2001</li>
+                    <li><span>Email</span> : jahidhr1019@gmail.com</li>
+                    <li><span>Phone</span> : + (880) 1621375705</li>
+                    <li><span>Bloodgroup</span> : O-</li>
+                    <li><span>Address</span> :  65/2/1, Paramount Heights, Culvert Road, Dhaka 1000, Bangladesh.</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/arabby1/" target="_blank" rel="noopener noreferrer"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://x.com/jahid1691" target="_blank" rel="noopener noreferrer"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="mailto:jahidhr1019@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/night_____king/" target="_blank" rel="noopener noreferrer"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/jahidhr1019" target="_blank" rel="noopener noreferrer"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Problem Solving</h6>
+                        <p class="subtitle"> I solve problems calmly with smart, practical actions</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Communication</h6>
+                        <p class="subtitle">C1 English; skilled in clear, calm conflict resolution.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Travel Agent</h6>
+                        <p class="subtitle">Expert travel agent, client-focused, Galileo-skilled.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Expertise</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2023 - Present</h6>
+                            <P>Manager</P>
+                            <P class="subtitle">Managed daily operations of ticket reservation services, ensuring timely
+                                and cost-effective bookings. Handled customer inquiries, provided destination-based
+                                guidance, and maintained high service standards. Built trust with clients by offering
+                                competitive fares and personalized solutions.</P>
+                            <hr>
+                            <h6 class="title text-danger">2021 - 2023</h6>
+                            <P>Reservation</P>
+                            <P class="subtitle">Handled flight bookings and itinerary management using Galileo
+                                Travelport. Assisted clients with accurate and timely reservations, provided fare
+                                quotes, and ensured smooth ticketing processes. Maintained excellent customer service
+                                while resolving booking-related issues efficiently.</P>
+                            <hr>
+                            <h6 class="title text-danger">2020 - 2021</h6>
+                            <P>Assistant to the Director</P>
+                            <P class="subtitle">Supported the Director in strategic decision-making, partner
+                                communication, and operational planning. Coordinated with business partners and
+                                embassies, managed client relations, and played a key role in maintaining profitability
+                                during critical periods such as the pandemic.</P>
+                            <hr>
+                            <h6 class="title text-danger">2023 - Present</h6>
+                            <P>Ambassador</P>
+                            <P class="subtitle">Represented the organization in key discussions with embassies,
+                                advocated for migrant rights, and supported legal and HR processes to create overseas
+                                job opportunities for Bangladeshi workers, primarily in the Middle East and Southeast
+                                Asia.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2025 - Present</h6>
+                            <P>Master Of Business Administration</P>
+                            <P class="subtitle">North South University Currently Enrolled (2025-Present)<br>
+                                Pursuing an MBA to develop expertise in finance, strategy, and leadership. Actively
+                                engaging in case studies, team projects, and business simulations to enhance
+                                decision-making and problem-solving abilities.</P>
+                            <hr>
+                            <h6 class="title text-danger">2020 - 2023</h6>
+                            <P>Bachelor Of Social Science</P>
+                            <P class="subtitle">University OF Dhaka -(DC) Completed: 2023 | CGPA: 3.20/4.00<br>
+                                Developed a multidisciplinary understanding of governance, data analysis, and economic
+                                policy.<br>
+                                <strong>Achievements:</strong><br>
+                                Striker, Political Science Football Team<br>
+                                Active Member, Debating Society<br>
+                                Teacher's Assistant (4th Year) supported academic and administrative tasks.
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">2017 - 2019</h6>
+                            <P>Higher Secondary School Certificate</P>
+                            <P class="subtitle">Monipur High School & College - Completed: 2020 | GPA: 4.42/5.00<br>
+                                Focused on Physics, Chemistry, Biology, and Math, developing logical reasoning and
+                                analytical skills.<br>
+                                <strong>Achievements:</strong><br>
+                                Project Manager, MUBC Cultural Program<br>
+                                Founding Member, Liberation War Library<br>
+                                Striker, College Football Team
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">2007 - 2017</h6>
+                            <P>Secondary School Certificate</P>
+                            <P class="subtitle">Monipur High School Completed: 2017 | GPA: 5.00/5.00<br>
+                                Excelled in core science subjects and demonstrated strong academic discipline.<br>
+                                <strong>Achievements:</strong><br>
+                                100% Attendance Award (5 times, 3 consecutively)<br>
+                                Class Monitor (Grades 8-10)<br>
+                                Football Team Captain & Left Winger
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Skills</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Microsoft Office</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Communication</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 87%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Problem Solving</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Analytics</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Critical Thinking</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Hindi</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Bengali</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">10K</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">5K</h1>
+                            <p class="text-light mb-1">Sells Made</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">11K</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2k</h1>
+                            <p class="text-light mb-1">Coffee Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Air Ticketing</h5>
+                            <P class="subtitle">At Hijrat Air Travels, I manage air ticket reservations using Galileo Travelport, ensuring clients receive timely, cost-effective, and accurate travel solutions tailored to their destinations and preferences.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Visa Processing</h5>
+                            <P class="subtitle">I assist clients in securing travel visas by providing guidance on documentation, submission processes, and embassy requirements—helping streamline approvals with minimal delays.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Document Reviews</h5>
+                            <P class="subtitle">Experienced in reviewing legal and travel documents to ensure accuracy, compliance, and readiness for visa, migration, and embassy procedures, particularly for Middle Eastern travel.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Travel Consultancy</h5>
+                            <P class="subtitle">I offer personalized travel advice based on destination, budget, and client needs. My consultancy ensures clients receive the best routes, services, and support throughout their journey.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Manpower</h5>
+                            <P class="subtitle">At Hijrat International, I help identify, prepare, and place Bangladeshi workers abroad, especially in the Middle East and Southeast Asia, aligning skill sets with employment opportunities.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-support text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Hajj & Umrah</h5>
+                            <P class="subtitle">I assist in organizing and coordinating Hajj & Umrah packages with care and precision, ensuring pilgrims have a smooth, spiritually fulfilling journey with complete support.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-custom-gray" id="price">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Services</span> Pricing</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Travel Consultancy</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">0</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">1 <span class="text-muted">Visa Application</span></li>
+                            <li class="list-item">10 <span class="text-muted">Document Reviews</span></li>
+                            <li class="list-item">1 <span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg" onclick="window.location.href='tel:+8801621375705';">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Air Ticketing</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">10</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">200 <span class="text-muted">Destinations</span></li>
+                            <li class="list-item">80 <span class="text-muted">Airlines</span></li>
+                            <li class="list-item">1 <span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg" onclick="window.location.href='tel:+8801621375705';">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center price-card-requried mb-4">
+                        <h3 class="price-card-title">Visa Processing</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">100</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">50 <span class="text-muted">Countries</span></li>
+                            <li class="list-item">10 <span class="text-muted">Visa types</span></li>
+                            <li class="list-item">1<span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg" onclick="window.location.href='tel:+8801621375705';">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="price-card text-center mb-4">
+                        <h3 class="price-card-title">Manpower</h3>
+                        <div class="price-card-cost">
+                            <sup class="ti-money"></sup>
+                            <span class="num">5</span>
+                            <span class="date">MO</span>
+                        </div>
+                        <ul class="list">
+                            <li class="list-item">50 <span class="text-muted">Countries</span></li>
+                            <li class="list-item">1 <span class="text-muted">Work Visa</span></li>
+                            <li class="list-item">1<span class="text-muted">User</span></li>
+                        </ul>
+                        <button class="btn btn-primary btn-rounded w-lg" onclick="window.location.href='tel:+8801621375705';">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">I Am Available For Better Opportunity </h2>
+            <button class="btn bg-primary w-lg" onclick="window.location.href='mailto:jahidhr1019@gmail.com';">Offer me</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        New
+                    </a>
+                    <a href="#" data-filter=".advertising">
+                        Advertising
+                    </a>
+                    <a href="#" data-filter=".branding">
+                        Branding
+                    </a>
+                    <a href="#" data-filter=".web">
+                        Office
+                    </a>
+                </div>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Office</h6>
+                                    <p class="subtitle">Muhammad (PBUH) - “The strong is the forgiving one.”</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/web-2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Office</h6>
+                                    <p class="subtitle">Marcus Aurelius - “You have power over your mind.”</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/advertising-2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSTISING</h6>
+                                    <p class="subtitle">Rumi - “The wound is where the light enters you.”</p>
+                                </div>
+                            </div>    
+                        </div>              
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web">
+                        <div class="portfolio-item">
+                            <img src="imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/web-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Office/h6>
+                                    <p class="subtitle">Machiavelli - “It is better to be feared than loved.”</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising"> 
+                        <div class="portfolio-item">
+                            <img src="imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/advertising-1.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSITING</h6>
+                                    <p class="subtitle">Socrates - “Know thyself.”</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                           <div class="content-holder">
+                                <a class="img-popup" href="imgs/web-3.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Office</h6>
+                                    <p class="subtitle">Confucius - “Silence is a true friend.”</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <img src="imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                           <div class="content-holder">
+                                <a class="img-popup" href="imgs/advertising-3.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERSITING</h6>
+                                    <p class="subtitle">Lao Tzu - “Mastering others is strength.”</p>
+                                </div>
+                            </div>
+                        </div>                                                       
+                    </div> 
+                    <div class="col-md-6 col-lg-4 advertising new"> 
+                        <div class="portfolio-item">
+                            <img src="imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/advertising-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ADVERTISING</h6>
+                                    <p class="subtitle">Imam Ali (RA) - “Patience is of two kinds.”
+
+</p>
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/branding-1.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Aristotle - “Knowing yourself is true wisdom.”</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/branding-2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Nelson Mandela - “It always seems impossible until done.”</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding new">
+                        <div class="portfolio-item">
+                            <img src="imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/branding-3.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Buddha - “Peace comes from within.”</p>
+                                </div>
+                            </div>
+                        </div>                                                    
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/branding-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Plato - “Wise men speak when they have something to say.”
+
+</p>
+                                </div>
+                            </div>
+                        </div>                                                      
+                    </div> 
+                    <div class="col-md-6 col-lg-4 branding">
+                        <div class="portfolio-item">
+                            <img src="imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                            <div class="content-holder">
+                                <a class="img-popup" href="imgs/branding-5.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">BRANDING</h6>
+                                    <p class="subtitle">Omar Khayyam - “Be happy for this moment is your life.”
+
+</p>
+                                </div>
+                            </div>
+                        </div>                                                   
+                    </div>
+                </div> 
+            </div>  
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <a href="imgs/blog11.jpg" target="_blank">
+                            <img src="imgs/blog11.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </a>
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Office</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Jahid</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        
+                        <p>Office life has taught me that success isn't just about how hard you work—it's about how well you connect, adapt, and respond to challenges. Every day brings a new situation: a client with a complex visa issue, a last-minute booking, or a problem that needs calm thinking and quick action. What makes it fulfilling is not just solving problems, but earning people’s trust.</p>
+
+                        <p><b>I've learned that patience, professionalism, and a positive attitude go further than any title.</b></p>
+                        <p>And most importantly—respect everyone, from the newest worker to the highest official. That's what builds a strong, lasting career.</p>
+
+                        <a href="https://www.instagram.com/reel/C1muBYbhhGr/" class="read-more" target="_blank" rel="noopener noreferrer">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <a href="imgs/blog22.JPG" target="_blank">
+                            <img src="imgs/blog22.JPG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </a>
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Personal</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Jahid</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                            <a href="#"><i class="ti-comment"></i> 264</a>
+                        </p>
+                        
+                        <p>In both personal and home life, balance is key. Prioritize meaningful connections, whether with family or friends, as these relationships nurture growth and happiness. Create a space where you can recharge, fostering peace and productivity. Stay curious—engage with hobbies, learn continuously, and embrace the little moments. Being mindful of time spent at home helps you cultivate well-being, and remember, even small efforts lead to big rewards in your personal journey.</p>
+
+                        <a href="https://www.instagram.com/p/DFLZOpTzomj/" class="read-more" target="_blank" rel="noopener noreferrer">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <a href="imgs/blog33.jpg" target="_blank">
+                            <img src="imgs/blog33.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </a>
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Nature</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Jahid</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
+                            <a href="#"><i class="ti-comment"></i> 312</a>
+                        </p>
+                        
+                        <p> Nature is not just a backdrop—it's our origin, our teacher, and our healer. Being close to it restores our minds, balances our emotions, and reminds us of life’s simple truths. In nature, we find peace without noise, clarity without chaos, and connection without Wi-Fi.</p>
+
+                        <a href="https://www.instagram.com/p/Cn89AYTh1RJ/" class="read-more" target="_blank" rel="noopener noreferrer">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (880) 1621375705</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">65/2/1, Paramount Heights, Culvert Road, Dhaka 1000, Bangladesh.</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">jahidhr1019@gmail.com</span></h6>
+                            </div>
+                        </div>
+                       <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link" href="https://www.facebook.com/arabby1/" target="_blank" rel="noopener noreferrer"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="https://x.com/jahid1691" target="_blank" rel="noopener noreferrer"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="mailto:jahidhr1019@gmail.com"><i class="ti-google"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="https://www.instagram.com/night_____king/" target="_blank" rel="noopener noreferrer"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link" href="https://github.com/jahidhr1019" target="_blank" rel="noopener noreferrer"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="https://www.facebook.com/arabby1/" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Jahid</span></a> 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://g.co/kgs/Nt5vFM6"></script>
+
+    <!-- JohnDoe js -->
+    <script src="js/johndoe.js"></script>
+
+</body>
+</html>
