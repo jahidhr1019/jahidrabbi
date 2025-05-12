@@ -1,4 +1,4 @@
-JohnDoe Free Bootstrap landing page for personal and commercial use. Designed with ♥️ and creativity by Devcrud.com 
+Jahid Free Bootstrap landing page for personal and commercial use. Designed with ♥️ and creativity  
 
 Product Page: https://wwww.devcrud.com/
 
