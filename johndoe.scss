@@ -1,17 +1,7 @@
-/*!
-=========================================================
-* JohnDoe Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
+/* --- TOP OF FILE: Your regular styles --- */
+body {
+    background-color: white;
+}
 
 // Core
 @import "vendors/bootstrap-4.3.1/functions";
@@ -73,7 +63,17 @@
 @import "components/nav";
 @import "components/navbars";
 @import "components/pagination";
-
 @import "layout/footer";
 @import "layout/header";
 @import "layout/sections";
+/* --- BOTTOM OF FILE: Your responsive "exceptions" --- */
+@media (max-width: 600px) {
+    /* These rules ONLY happen on small screens */
+    body {
+        background-color: lightblue; 
+    }
+    .your-sidebar {
+        display: none; /* Hide sidebars on mobile */
+    }
+}
+
