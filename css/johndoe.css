@@ -1,16 +1,21 @@
-@charset "UTF-8";
-/*!
-=========================================================
-* JohnDoe Landing page
-=========================================================
+/* 1. AT THE TOP: Global Fixes (Reset & iPhone Fixes) */
+* { box-sizing: border-box; }
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
+body {
+    margin: 0;
+    /* Keeps content away from the iPhone notch */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
 
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+/* Prevents iPhone from zooming in on text boxes */
+input, textarea, select {
+    font-size: 16px;
+}
+/* 2. THE MIDDLE: Your Main Design (Desktop styles) */
+.header { 
+    background: #f4f4f4; 
+    padding: 20px; 
+}
 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
 :root {
@@ -11681,4 +11686,21 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+/* 3. THE HOVER WRAPPER: Only for computers */
+@media (hover: hover) {
+    .button:hover {
+        background-color: #2ecc71;
+    }
+}
+
+/* 4. THE BOTTOM: Media Queries (Mobile overrides) */
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    /* Change your layout from side-by-side to stacked */
+    .container {
+        display: block;
+    }
 }
