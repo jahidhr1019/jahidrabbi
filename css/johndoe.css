@@ -11704,3 +11704,70 @@ pre .code {
         display: block;
     }
 }
+/* --- BASE HERO STYLE --- */
+.hero-section {
+    position: relative;
+    /* Use your actual image filename here */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('image_1c9c66.jpg'); 
+    background-size: cover;
+    background-position: center top;
+    height: 100vh; /* Full screen desktop */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+
+/* Social Icons at top */
+.social-top {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.social-top a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Text Styles */
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.intro-text { font-size: 1.5rem; }
+
+/* The Pink Button */
+.print-btn {
+    display: inline-block;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* --- MOBILE & IPHONE FIX --- */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 100dvh; /* Dynamic height for mobile Safari */
+        padding: 20px;
+        /* Adjusts background so text doesn't hide your face on thin screens */
+        background-position: 70% center; 
+    }
+
+    .social-top {
+        left: 20px;
+        top: env(safe-area-inset-top); /* iPhone notch protection */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem; /* Shrinks name so it fits on one line */
+    }
+}
